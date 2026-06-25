@@ -1,19 +1,19 @@
-print("โปรแกรมคำนวณคะแนนรวม")
+print("โปรแกรมคำนวณ ค่าBMIและแปลผลสุขภาพ")
+W1 = int(input("น้ำหนัก(kg)"))
+H1 = int(input("ความสูง(cm)"))
 
-point1 = int (input("คะแนนวิชาคณิตศาสตร์:"))
-point2 = int (input("คะแนนวิชาสังคม:"))
-point3 = int (input("คะแนนวิชาชีวะ:"))
+total = W1 / H1 * H1
 
+average = total 
 
-total_point = point1 + point2 + point3
-print("คะแนนรวม, total_point")
-average = total_point / 3
-print("คะแนนเฉลี่ยทั้ง3วิชา",average)
+if average <=18.5:
+    print("น้ำหนักน้อย")
 
+elif  average  >=18.6-22.9:
+    print("ปกติ")
 
-if average >=80:
-   print("ดีเยี่ยม")
-elif average >=60:
-   print("ผ่าน")
-else:
-   print("ควรปับปรุง")
+elif  average  >=23-24.9:
+    print("น้ำหนักเกิน")
+
+elif  average  <=25:
+    print("อ้วน")
